@@ -1,28 +1,35 @@
 body {
     font-family: "sweet-sans-pro", sans-serif;
-    font-weight: 400;
+    font-weight: bold;
     font-style: normal;
+    background-color: #BADBBF;
 }
 
 h1 {
-    font-size: clamp(24px, 36px, 36px);
+    font-size: clamp(24px, 36px, 48px);
 }
 
 p {
-    font-size: clamp(14px, 16px, 16px);
+    font-size: clamp(14px, 18px, 18px);
 }
 
 .mainHeader {
     display: flex;
     flex-direction: row;
-    gap: 2rem;
+    gap: 4rem;
     justify-content: center;
     padding: 1rem;
+    background-color:#34643D;
 }
 
 .mainHeader a {
-    color: black;
+    color: #BADBBF;
     text-decoration: none;
+    font-size: 20px;
+}
+
+.mainHeader a:hover {
+    color:#B79FEB;
 }
 
 .homecontent {
@@ -31,12 +38,12 @@ p {
     align-items: center;
     position: relative;
     top: 3rem;
+    margin: 2rem;
 }
 
 .homecontentText {
     display: flex;
     flex-direction: column;
-    color: purple;
     place-items: center;
 }
 
@@ -50,12 +57,14 @@ p {
     position: relative;
     height: auto;
     justify-content: center;
+    margin-top: 1rem;
     margin-bottom: 6rem;
 }
 
 #topimg {
     width: 70%;
     z-index: 1;
+    border: solid 1rem #664C75 
 }
 
 #leftimg {
@@ -64,7 +73,7 @@ p {
     top: 70%;
     left: 10%;
     z-index: 2;
-    border: solid 1rem pink;
+    border: solid 0.5rem #B79FEB;
 }
 
 #rightimg {
@@ -73,9 +82,8 @@ p {
     top: 70%;
     right: 10%;
     z-index: 2;
-    border: solid 1rem pink;
+    border: solid 0.5rem #B79FEB;
 }
-
 
 footer {
     display: flex;
@@ -83,12 +91,23 @@ footer {
     justify-content: space-evenly;
     padding: 3rem;
     gap: 3rem;
-    font-size: clamp(12px, 2vw, 16px);
+    font-size: clamp(12px, 18px, 18px);
+    color:#34643D;
 }
 
 .emails {
     display: flex;
     flex-direction: column;
+    gap: 5px;
+}
+
+.emails a {
+    color:#34643D;
+    text-decoration: none;
+}
+
+.emails a:hover {
+    color:#664C75;
 }
 
 .abMepage {
@@ -112,6 +131,7 @@ footer {
 .description {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .portcont {
@@ -122,21 +142,8 @@ footer {
 
 .cardimgs {
     width: 200px;
-
 }
 
-#overlay {
-    position: fixed;
-    display: none;
-    top: 0;
-    left: 0;
-    background-color: rgba(0,0,0,0.5);
-    z-index: 2;
-}
-
-#underlay {
-    position: relative;
-}
 
 
 @media  (max-width: 426px) {
@@ -233,9 +240,7 @@ footer {
 
 .back{
   background: #B79FEB;
-  background: -webkit-linear-gradient(45deg,  #B79FEB 0%,#393248 100%);
-  background: -o-linear-gradient(45deg,  #B79FEB 0%,#393248 100%);
-  background: linear-gradient(45deg,  #B79FEB 0%,#393248 100%);
+  color: black;
 }
 
 .front:after{
